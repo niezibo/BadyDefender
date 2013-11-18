@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+            <LINK rel=stylesheet type=text/css href="css/style.css">
+    <LINK rel=stylesheet type=text/css href="css/spacegallery.css">
+         <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" href="css/jquery.mobile-1.3.2.min.css" />
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.mobile-1.3.2.min.js"></script>
+        <title>胎教音乐</title>
+    </head>
+
+<body >
+<div data-role="page" id="page1" style="background-image:url(img/bg.jpg);" >
+    <div data-theme="e" data-role="header" data-position="fixed"  >
+        <a class="ui-btn-left"  data-rel="back" data-add-back-btn="true" data-icon="arrow-l" data-transition="fade" >宝贝广场</a>
+        <h3>
+            胎教音乐
+        </h3>
+        <a class="ui-btn-right"  data-rel="dialog" href="#choosePictures" >宝贝相册</a>
+    </div>
+    <div data-role="content">
+
+      <SCRIPT type=text/javascript src="js/eye.js"></SCRIPT>
+      <SCRIPT type=text/javascript src="js/spacegallery.js"></SCRIPT>
+      <SCRIPT type=text/javascript src="js/xixi.js"></SCRIPT>
+        <div id=main_col>
+            <div id=gallery class=spacegallery>
+                <img class=va alt=Valant src="img/valant.gif">
+                <img class=bg alt="Beautiful Garden"  src="img/garden.gif"> 
+                <img class=fm alt=Fizjo-med src="img/fizjomed.gif">
+                 <img class=ss alt="Sun System Energy"  src="img/sunsenergy.gif"> 
+                 <img class=re alt=Rejestrator.net src="img/rejestrator.gif"> 
+                 <img class=kh alt="Kurs homiletyczny" src="img/kurs.gif"> 
+                 <img class=dt alt="Dziennik Teatralny"  src="img/teatry.gif"> 
+                 <img class=ar alt="Stacje Paliw Arge"  src="img/arge.gif"> 
+                 <img class=un alt="Uniwersytet Ekonomiczny" src="img/uniwersytet.gif"> 
+            </div>
+        </div>
+        <div class="songItro" align="center">
+          <p class="songName"style="font-family:微软雅黑; font-size:18px; font-weight:bold; line-height:60px;">森林鸟儿</p>
+          <marquee align="middle" direction="up"  scrollamount=1 height="200px">
+              <p class="songDetail" style="font-family:微软雅黑; font-size:16px;">
+                  《森林鸟儿》透明纯净的音符 森林鸟儿－透明纯净的音符，巧妙结合大自然的声响，为宝宝的脑力发展开启大门，让他的潜能完全发展，音乐感受力与智能充分发挥。 　[大自然合唱曲]～森林、鸟鸣和海洋的唱和，融入丰富的音乐元素，使宝宝透过音乐来探索这个奇妙的世界！
+              </p>  
+          </marquee>
+        </div>
+        <div id="radioBox" style="display:none;">
+        <script src="js/player_DONE.js"></script>
+            <audio id="myAudio" autoplay="yes" controls preload="yes" align="center"  style="width:100%;" >
+     <source src="http://music.baby611.com/music/tj/slne.mp3" type="audio/mp4" />
+     <p>Your browser does not support HTML5 audio.</p>
+   </audio>
+       </div>
+      
+    </div>
+    <div data-theme="e" data-role="footer"  data-position="fixed">
+      <div>
+          <div data-role="fieldcontain" style="width:90%; top:0px; left:10%;">
+            <input name="slider" id="slider" type="range" min="0" max="100" value="0"
+            data-highlight="true" data-track-theme="d" data-mini="true" style="display:none;">
+          </div>
+       <input id="PalyBtn" type="image" src="images/play.png" style="margin-top:-40px;" />
+       <input id="play_toggle" type="image" src="images/pause.png" />
+       <div id="timeZone" style="float:right; margin-right:5%;">
+            <label id="current_time" style="float:left;">00:00</label>
+            <label id="duration" style="float:right;">/00:00</label>
+       </div>
+
+       </div>
+    </div>
+</div>
+<div data-role="page" id="choosePictures" style="background-image:url(img/bg.jpg);" data-rel="back" data-add-back-btn="true" data-back-btn-text="返回">
+     <div data-theme="e" data-role="header" data-position="fixed"   >
+        <h3>
+            选择相册
+        </h3>
+    </div>
+    <div data-role="content">
+    </div>
+</div>
+ <script src="js/radioListcontainer.js"></script>
+ <script src="js/readRadiolist.js"></script>
+
+</body>
+</html>
