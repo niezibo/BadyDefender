@@ -21,7 +21,7 @@ $(function(){
 				  console.log(evt.target.result);
 				  window.localStorage.setItem("songSource",evt.target.result);
 			   };
-			   reader.readAsText(file);
+			  reader.readAsText(file);
 		};
 		function fail(evt){
 			console.log(evt.target.error.code);
@@ -33,10 +33,13 @@ $(function(){
 		   {
 			   if(typeof LocalFileSystem == "undefined" )
 			   {
-				   
+				                console.log("Check>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
 								window.localStorage.setItem("songSource",radioListCon());
 							   songSourceString = window.localStorage.getItem("songSource");
 				   
+				}else
+				{
+					
 				}
 
 			}
