@@ -65,6 +65,6 @@ $(function(){
 		$("#baikeList li").bind("click",function(){
 		    $("#baikeDetailSup").html(arr[$(this).index()].baikeName);
 		    $("#baikeDetailSub").html(arr[$(this).index()].baikeDetail);
-			$("#baikeDetailSub img").css("width",$("#baikeDetailSub").css("width"));
+			
 		});
 	});
